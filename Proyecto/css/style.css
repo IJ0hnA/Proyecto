@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #ffffff;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    background: #51ceff;
+}
+
+header #button-menu{
+    font-size: 40px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.navegacion{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .0);
+    transition: background 0.5s;
+}
+
+.navegacion ul{
+    width: 320px;
+    height: 100%;
+    background: #51ceff;
+    list-style: none;
+    transition: left .5s;
+    position: absolute;
+    top: 0;
+    left: -320px;
+}
+
+.title-menu{
+    padding: 20px;
+    background: #161616;
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.navegacion .menu a{
+    display: block;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #000000;
+}
+
+.icon-menu{
+    margin-right: 10px;
+}
+
+.item-submenu > a:after{
+    content: '>';
+    float: right;
+    color: #000000;
+}
+
+/* SUBMENU */
+
+.submenu li.title-menu{
+    border-top: 1px solid #000000;
+    background: #51ceff;
+}
+
+.go-back{
+    padding: 10px 20px;
+    background: #ff5959;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    border-top: 1px solid #000000;
+}
+
+.go-back:before{
+    content: '<';
+    margin-right: 10px;
+    color: #000000;
+}
